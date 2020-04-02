@@ -1,0 +1,42 @@
+{
+  "name": "epets",
+  "version": "0.0.1",
+  "description": "proyecto cohort1-team-diego ",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack-dev-server --env.APIKEY_FIREBASE=AIzaSyCf8Rb66RHDNAh-Cw4w9ljaI5dB7Jt0qP4 --config ./webpack.dev.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcasallas/epets.git"
+  },
+  "author": "teamDiego",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcasallas/epets/issues"
+  },
+  "homepage": "https://github.com/lcasallas/epets#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.0.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
