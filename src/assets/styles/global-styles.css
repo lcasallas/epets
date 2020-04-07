@@ -1,0 +1,22 @@
+/* GENERAL-VARIABLE */
+
+:root {
+  /* COLORS */
+  --color-main: #30e3cb;
+  --color-footer: #423378;
+  --color-main-title: #01d28e;
+  --color-secondary: #fb0091;
+  --color-third: #7045ff;
+  --color-third-change: #685b92;
+  --color-fourth: #713209;
+  --color-toys-background: #f7f7f7;
+  --color-food-background: #fff2ed;
+  --color-service-background: #f5fbf1;
+  --color-border-box: #d3d3d3;
+  --color-shadows:rgba(0, 0, 0, 0.2);
+
+  /* FONT */
+  --font-main:'Muli', sans-serif;
+}
+
+
