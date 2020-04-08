@@ -1,15 +1,21 @@
 import React, {useContext} from 'react'
 import ListOfCards from '../components/ListOfCards'
-import ColorContext from '../Context/Colors'
+import InformationContext from '../Context/Information'
 
 export default function Home() {
-const colors=useContext(ColorContext)
-console.log(colors)
+  const information = useContext(InformationContext)
   return (
     <div>
-      <ListOfCards style={{ backgroundColor: colors.blueT }}/>
-      <ListOfCards style={{ backgroundColor: colors.blueT }} />
-      <ListOfCards style={{ backgroundColor: colors.blueT }} />
+    {information.sections.map((typeOfProduct)=>{
+      return(
+        <ListOfCards key={typeOfProduct.color}
+        color={typeOfProduct.color}
+        title={typeOfProduct.title}
+        subtitle={[typeOfProduct.subTitles]}
+        />
+      )
+    })
+    }
     </div>
   )
 }

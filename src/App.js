@@ -1,10 +1,10 @@
 import React from 'react'
 import Home from './pages/Home';
-import ColorContext, {Colors} from '../src/Context/Colors';
+import ColorContext, {Information} from './Context/Information';
 
 const App = () => {
   return (
-    <ColorContext.Provider value={Colors.data}>
+    <ColorContext.Provider value={Information.data}>
       <Home />
     </ColorContext.Provider>
   )
