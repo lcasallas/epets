@@ -1,7 +1,16 @@
 import React from 'react';
+import Footer from '../components/Footer'
 
-const Home = () => {
-  return <div>Hola E-Pets</div>;
-};
+const Home = () => (
+
+  <>
+    
+    <Footer />
+
+
+  </>
+
+
+)
 
 export default Home;
