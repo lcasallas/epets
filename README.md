@@ -14,4 +14,4 @@ npm install
 npm run build:dev
 ```
 
-El poryecto iniciara en http://localhost:3800
+El proyecto iniciara en http://localhost:3800
