@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react'
+import ListOfCards from '../components/ListOfCards'
+import ColorContext from '../Context/Colors'
 
-const Home = () => {
-  return <div>Hola E-Pets</div>;
-};
-
-export default Home;
+export default function Home() {
+const colors=useContext(ColorContext)
+console.log(colors)
+  return (
+    <div>
+      <ListOfCards style={{ backgroundColor: colors.blueT }}/>
+      <ListOfCards style={{ backgroundColor: colors.blueT }} />
+      <ListOfCards style={{ backgroundColor: colors.blueT }} />
+    </div>
+  )
+}

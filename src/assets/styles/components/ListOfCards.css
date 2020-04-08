@@ -1,0 +1,29 @@
+h2{
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.cards__container{
+  display: flex;
+  justify-content: center;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: auto;
+  background-color: white;
+}
+
+.cards__container:nth-child(1){
+  display: flex;
+  justify-content: flex-end;
+}
+.cards__container:nth-child(3){
+  display: flex;
+  justify-content: flex-start;
+}
+
