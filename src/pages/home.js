@@ -1,7 +1,16 @@
 import React from 'react';
 
-const Home = () => {
-  return <div>Hola E-Pets</div>;
-};
+import Ads from '../components/Ads'
+const Home = () => (
+
+  <>
+    <Ads />
+    
+
+
+  </>
+
+
+)
 
 export default Home;

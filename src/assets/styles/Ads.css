@@ -1,0 +1,23 @@
+.Ads {
+
+  height: 300px;  
+  border: 2px red solid;
+  padding: 10px;
+}
+
+.Ads__container {
+
+  height: 100%;
+  border: 1px black solid;
+  margin: 0;
+  padding: 0 120px;
+}
+
+.Ads__container--image {
+  
+  height: 100%;
+  width: 56%;
+  margin: 0 auto;
+  background-image: url('https://d3nuqriibqh3vw.cloudfront.net/styles/media_retina/s3/cat_food.jpg?itok=JK8ojG4r');
+  background-size: cover;
+}
