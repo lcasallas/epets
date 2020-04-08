@@ -4,8 +4,9 @@ import InformationContext from '../Context/Information'
 
 export default function Home() {
   const information = useContext(InformationContext)
+
   return (
-    <div>
+    <section>
     {information.sections.map((typeOfProduct)=>{
       return(
         <ListOfCards key={typeOfProduct.color}
@@ -16,6 +17,6 @@ export default function Home() {
       )
     })
     }
-    </div>
+    </section>
   )
 }
