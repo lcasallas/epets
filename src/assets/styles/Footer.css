@@ -1,0 +1,32 @@
+.Footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #423378;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Footer__container {
+  margin: auto;
+  list-style: none;
+  display: inline-flex;
+}
+.Footer__container li {
+  text-align: center;
+  margin: 0 15px 0 0;
+  color: #01d28e
+}
+.Footer__container li a {
+  font-size: 15px;
+  color: #01d28e;
+  text-align: center;
+  text-decoration: none;
+}
+.Footer__container li a:hover {
+  text-decoration: underline;
+}
