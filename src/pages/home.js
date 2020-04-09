@@ -1,10 +1,11 @@
 import React from 'react';
 import Footer from '../components/Footer'
+import Ads from '../components/Ads'
 
 const Home = () => (
 
   <>
-    
+    <Ads />
     <Footer />
 
 
@@ -12,5 +13,6 @@ const Home = () => (
 
 
 )
+
 
 export default Home;
