@@ -50,3 +50,7 @@ article{
 .service{
   background-color: var(--color-service-background);
 }
+
+a{
+  text-decoration: none;
+}
