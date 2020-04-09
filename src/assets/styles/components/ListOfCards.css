@@ -4,7 +4,7 @@
   font-size: 1.8em;
   font-weight: bolder;
   text-transform: uppercase;
-  margin-top: 1.5em;
+  margin: 1.5em 0px;
 }
 
 .toys{
@@ -33,6 +33,10 @@
   grid-auto-columns: auto;
   background-color: white;
   margin: 0 100px;
+}
+
+.card{
+  height: 460px;
 }
 
 @media screen and (max-width:400px) {

@@ -16,14 +16,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    padding: 30px 5%;
+    padding: 5px 5%;
     background-color: #30e3cb;
+    box-shadow: 10px 10px 5px 0px var(--color-shadows);
 }
 
 .logo {
     cursor: pointer;
     width: 200px;
-    height: 50%;
+    height: 40%;
     padding-bottom: 0px;
 }
 

@@ -1,16 +1,18 @@
 .Ads {
-
-  height: 300px;  
-  border: 2px red solid;
+  height: 300px;
   padding: 10px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 .Ads__container {
 
   height: 100%;
-  border: 1px black solid;
+  border: 2px var(--color-shadows) solid;
   margin: 0;
-  padding: 0 120px;
+  padding: 0 110px;
+  width: 90%;
 }
 
 .Ads__container--image {
