@@ -1,0 +1,21 @@
+@import '../global-styles.css';
+
+.ProductsList {
+  padding: 40px;
+}
+
+.ProductsList__title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-fourth);
+  font-family: var(--font-main);
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.ProductsList__products {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
