@@ -10,7 +10,6 @@ return (
     </div>
     <div className='cards'>
       {subtitle.map(item=>{
-        console.log(subtitle)
         return(
             item.map((dataCard)=>{
               return (
