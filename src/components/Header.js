@@ -15,8 +15,8 @@ const Header = () => (
             </a>
             <a href='/'>
                 <li>Ropa</li>
-            </a href='/'>
-            <a>
+            </a>
+            <a href='/'>
                 <li>Estetica</li>
             </a>
             <a href='/'>
