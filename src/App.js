@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/Home.js';
+import Home from './pages/home';
 import ColorContext, { Information } from './Context/Information';
 
 const App = () => {
