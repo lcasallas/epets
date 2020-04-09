@@ -1,0 +1,55 @@
+@import '../global-styles.css';
+
+article{
+  border-radius: 10px;
+  width: 280px;
+  padding: 0.5em 1.5em;
+  box-shadow: 8px 8px 2px 0px var(--color-shadows);
+}
+
+.card__img{
+  display: flex;
+  justify-content: center;
+}
+
+.card__img img{
+  height: 240px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card__title{
+  color: var(--color-third-change);
+  font-family: var(--font-main);
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.card__text{
+  text-align: justify;
+  font-size: 14px;
+}
+
+.card__text p {
+  font-family: var(--font-main);
+  color: var(--color-third-change);
+}
+
+.toy{
+  background-color: var(--color-toys-background);
+}
+
+.food{
+  background-color: var(--color-food-background);
+}
+
+.service{
+  background-color: var(--color-service-background);
+}
+
+a{
+  text-decoration: none;
+}
