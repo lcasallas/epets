@@ -6,6 +6,7 @@ export const Information = {
       {
         title:'Juguetes destacados',
         color:'toy',
+        id:'toys',
         subTitle:[
             {
               name:'relajación',
@@ -27,6 +28,7 @@ export const Information = {
       {
         title:'comida',
         color:'food',
+        id:'foods',
         subTitle:[
           {
             name:'adultos',
@@ -48,6 +50,7 @@ export const Information = {
       {
         title:'servicios medicos',
         color:'service',
+        id:'services',
         subTitle:[
           {
               name:'doc perros',

@@ -12,6 +12,7 @@ export default function Home() {
         <ListOfCards key={typeOfProduct.color}
         color={typeOfProduct.color}
         title={typeOfProduct.title}
+        id={typeOfProduct.id}
         subtitle={[typeOfProduct.subTitle]}
         />
       )

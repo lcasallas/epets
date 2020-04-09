@@ -2,14 +2,15 @@ import React from 'react'
 import Card from './Card'
 import '../assets/styles/components/ListOfCards.css'
 
-export default function ListOfCards({color, title, subtitle }) {
+export default function ListOfCards({color, title, subtitle, id }) {
 return (
   <section>
-    <div>
+    <div className={`cards__title ${id}`}>
       <h2>{title}</h2>
     </div>
     <div className='cards'>
       {subtitle.map(item=>{
+        console.log(subtitle)
         return(
             item.map((dataCard)=>{
               return (

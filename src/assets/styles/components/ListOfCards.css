@@ -1,10 +1,25 @@
-h2{
+.cards__title{
   text-align: center;
   font-family: var(--font-main);
   font-size: 1.8em;
   font-weight: bolder;
   text-transform: uppercase;
   margin-top: 1.5em;
+}
+
+.toys{
+  background-color: white;
+  color:var(--color-third-change);
+}
+
+.foods{
+  background-color: white;
+  color:var(--color-secondary);
+}
+
+.services{
+  background-color: white;
+  color:var(--color-main-title);
 }
 
 .cards__container{
@@ -14,16 +29,15 @@ h2{
 
 .cards{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-columns: auto;
   background-color: white;
+  margin: 0 100px;
 }
 
-.cards__container:nth-child(1){
-  display: flex;
-  justify-content: flex-end;
-}
-.cards__container:nth-child(3){
-  display: flex;
-  justify-content: flex-start;
+@media screen and (max-width:400px) {
+  .cards{
+    margin:0;
+    grid-gap: 30px;
+  }
 }

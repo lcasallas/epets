@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import '../assets/styles/components/card.css'
 
 export default function Card({data, color}) {
