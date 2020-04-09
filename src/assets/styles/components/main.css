@@ -1,0 +1,16 @@
+.main__title{
+  color: var(--color-main);
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 1.5em 0px;
+}
+
+.main_text{
+  color: var(--color-third-change);
+  padding: 0 110px;
+  text-align: center;
+  font-family: var(--font-main);
+}

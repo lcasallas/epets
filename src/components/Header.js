@@ -7,12 +7,22 @@ const Header = () => (
         <img className="logo" src={Logo} />
         <nav>
             <ul className="nav-links">
-            <li>Juguetes</li>
-            <li>Comida</li>
-            <li>Ropa</li>
-            <li>Estetica</li>
-            <li>Consulta Medica</li>
-        </ul> 
+            <a href='/'>
+                <li>Juguetes</li>
+            </a>
+            <a href='/'>
+                <li>Comida</li>
+            </a>
+            <a href='/'>
+                <li>Ropa</li>
+            </a href='/'>
+            <a>
+                <li>Estetica</li>
+            </a>
+            <a href='/'>
+                <li>Consulta Medica</li>
+            </a>
+        </ul>
         </nav>
         
     </header>
