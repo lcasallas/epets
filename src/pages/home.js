@@ -1,14 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer'
-import Ads from '../components/Ads'
+import Header from '../components/Header'
+//import Footer from '../components/Footer'
+//import Ads from '../components/Ads'
 
 const Home = () => (
 
   <>
-    <Ads />
-    <Footer />
-
-
+  <Header />
   </>
 
 
