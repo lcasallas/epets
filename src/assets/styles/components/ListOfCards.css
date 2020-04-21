@@ -4,7 +4,8 @@
   font-size: 1.8em;
   font-weight: bolder;
   text-transform: uppercase;
-  margin: 1.5em 0px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 .toys {
@@ -25,24 +26,30 @@
 .cards__container {
   display: flex;
   justify-content: center;
+  margin: 0 35px 0 5px;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  grid-gap: 60px;
-  grid-auto-columns: auto;
+  display: flex;
+  overflow: auto;
+  padding-bottom: 20px;
   background-color: white;
-  margin: 0 100px;
+  margin: 0 100px 0 100px;
 }
 
-.card {
-  height: 460px;
+.cards::-webkit-scrollbar {
+  background-color: var(--color-shadows);
+  border-radius: 20px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: darkslateblue;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 400px) {
   .cards {
     margin: 0;
-    grid-gap: 30px;
   }
 }
