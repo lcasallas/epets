@@ -7,14 +7,15 @@ import fishIcon from '../assets/static/fishIcon.png';
 import birdIcon from '../assets/static/birdIcon.png';
 import reptileIcon from '../assets/static/reptileIcon.png';
 import mamalIcon from '../assets/static/mamalIcon.png';
+import cookieIcon from '../assets/static/cookieIcon.png';
 
 const Header = () => (
-  <header>
+  <header className="Header">
     <img className='logo' src={Logo} />
     <nav>
       <ul className='nav-links'>
-        <img src={dogIcon} className='header-icon'></img>
         <a href='/'>
+        <img src={dogIcon} className='header-icon'></img>
           <li>Perros</li>
         </a>
         <a href='/'>
@@ -39,6 +40,7 @@ const Header = () => (
         </a>
       </ul>
     </nav>
+    <img src={cookieIcon} className='cookie-menu'></img>
   </header>
 );
 
