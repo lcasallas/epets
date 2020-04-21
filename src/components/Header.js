@@ -8,19 +8,22 @@ const Header = () => (
     <nav>
       <ul className='nav-links'>
         <a href='/'>
-          <li>Juguetes</li>
+          <li>Perros</li>
         </a>
         <a href='/'>
-          <li>Comida</li>
+          <li>Gatos</li>
         </a>
         <a href='/'>
-          <li>Ropa</li>
+          <li>Peces</li>
         </a>
         <a href='/'>
-          <li>Estetica</li>
+          <li>Aves</li>
         </a>
         <a href='/'>
-          <li>Consulta Medica</li>
+          <li>Reptiles</li>
+        </a>
+        <a href='/'>
+          <li>Mamíferos</li>
         </a>
       </ul>
     </nav>
