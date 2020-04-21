@@ -36,7 +36,7 @@ header {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 5px;
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
@@ -45,3 +45,8 @@ header {
     color: #423378
     
 }
+
+.header-icon {
+    height: 20px;
+}
+

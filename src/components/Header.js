@@ -13,28 +13,28 @@ const Header = () => (
     <img className='logo' src={Logo} />
     <nav>
       <ul className='nav-links'>
-        <img src={dogIcon} ></img>
+        <img src={dogIcon} className='header-icon'></img>
         <a href='/'>
           <li>Perros</li>
         </a>
         <a href='/'>
-        <img src={catIcon} ></img>
+        <img src={catIcon} className='header-icon'></img>
           <li>Gatos</li>
         </a>
         <a href='/'>
-        <img src={fishIcon} ></img>
+        <img src={fishIcon} className='header-icon'></img>
           <li>Peces</li>
         </a>
         <a href='/'>
-        <img src={birdIcon} ></img>
+        <img src={birdIcon} className='header-icon'></img>
           <li>Aves</li>
         </a>
         <a href='/'>
-        <img src={reptileIcon} ></img>
+        <img src={reptileIcon} className='header-icon'></img>
           <li>Reptiles</li>
         </a>
         <a href='/'>
-        <img src={mamalIcon} ></img>
+        <img src={mamalIcon} className='header-icon'></img>
           <li>Mamíferos</li>
         </a>
       </ul>
