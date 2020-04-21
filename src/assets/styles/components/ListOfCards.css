@@ -1,4 +1,4 @@
-.cards__title{
+.cards__title {
   text-align: center;
   font-family: var(--font-main);
   font-size: 1.8em;
@@ -7,41 +7,42 @@
   margin: 1.5em 0px;
 }
 
-.toys{
+.toys {
   background-color: white;
-  color:var(--color-third-change);
+  color: var(--color-third-change);
 }
 
-.foods{
+.foods {
   background-color: white;
-  color:var(--color-secondary);
+  color: var(--color-secondary);
 }
 
-.services{
+.services {
   background-color: white;
-  color:var(--color-main-title);
+  color: var(--color-main-title);
 }
 
-.cards__container{
+.cards__container {
   display: flex;
   justify-content: center;
 }
 
-.cards{
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-gap: 60px;
   grid-auto-columns: auto;
   background-color: white;
   margin: 0 100px;
 }
 
-.card{
+.card {
   height: 460px;
 }
 
-@media screen and (max-width:400px) {
-  .cards{
-    margin:0;
+@media screen and (max-width: 400px) {
+  .cards {
+    margin: 0;
     grid-gap: 30px;
   }
 }
