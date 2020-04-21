@@ -66,3 +66,12 @@ header {
         height: 60px;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .header-icon{
+        display: none;
+    }
+    .cookie-menu{
+        display: flex;
+    }
+}
