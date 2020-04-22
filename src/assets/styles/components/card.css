@@ -1,18 +1,18 @@
-@import '../global-styles.css';
+@import "../global-styles.css";
 
-article{
+article {
   border-radius: 10px;
-  width: 350px;
+  width: 300px;
   padding: 0.5em 1.5em;
   box-shadow: 8px 8px 2px 0px var(--color-shadows);
 }
 
-.card__img{
+.card__img {
   display: flex;
   justify-content: center;
 }
 
-.card__img img{
+.card__img img {
   height: 240px;
   width: 240px;
   display: flex;
@@ -21,7 +21,7 @@ article{
   margin-top: 15px;
 }
 
-.card__title{
+.card__title {
   color: var(--color-third-change);
   font-family: var(--font-main);
   text-transform: uppercase;
@@ -29,7 +29,7 @@ article{
   padding: 20px 0px;
 }
 
-.card__text{
+.card__text {
   text-align: justify;
   font-size: 14px;
 }
@@ -39,27 +39,27 @@ article{
   color: var(--color-third-change);
 }
 
-.toy{
+.toy {
   background-color: var(--color-toys-background);
 }
 
-.food{
+.food {
   background-color: var(--color-food-background);
 }
 
-.service{
+.service {
   background-color: var(--color-service-background);
 }
 
-a{
+a {
   text-decoration: none;
   font-family: var(--font-main);
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-.card__link{
+.card__link {
   padding-top: 10px;
 }
