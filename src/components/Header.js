@@ -8,6 +8,12 @@ import birdIcon from '../assets/static/birdIcon.png';
 import reptileIcon from '../assets/static/reptileIcon.png';
 import mamalIcon from '../assets/static/mamalIcon.png';
 import cookieIcon from '../assets/static/cookieIcon.png';
+import petToy from '../assets/static/pettoy.png';
+import dogFood from '../assets/static/dogfood.png';
+import clothes from '../assets/static/tshirt.png';
+import stetic from '../assets/static/stetic.png';
+import medic from '../assets/static/consulta.png';
+import bordContact from '../assets/static/birdcontact.png';
 
 const Header = () => (
   <header className="Header">
@@ -15,28 +21,30 @@ const Header = () => (
     <nav>
       <ul className='nav-links'>
         <a href='/'>
-        <img src={dogIcon} className='header-icon'></img>
-          <li>Perros</li>
+        <img src={petToy} className='header-icon'></img>
+          <li>Juguetes</li>
         </a>
         <a href='/'>
-        <img src={catIcon} className='header-icon'></img>
-          <li>Gatos</li>
+        <img src={dogFood} className='header-icon'></img>
+          <li>Comida</li>
         </a>
         <a href='/'>
-        <img src={fishIcon} className='header-icon'></img>
-          <li>Peces</li>
+        <img src={clothes} className='header-icon'></img>
+          <li>Ropa</li>
         </a>
         <a href='/'>
-        <img src={birdIcon} className='header-icon'></img>
-          <li>Aves</li>
+        <img src={stetic} className='header-icon'></img>
+          <li>Estetica</li>
         </a>
         <a href='/'>
-        <img src={reptileIcon} className='header-icon'></img>
-          <li>Reptiles</li>
+        <img src={medic} className='header-icon'></img>
+          <li>Consulta Medica</li>
         </a>
-        <a href='/'>
-        <img src={mamalIcon} className='header-icon'></img>
-          <li>Mamíferos</li>
+        <a href='mail to:'>
+        <img src={bordContact} className='header-icon'></img>
+          <li>
+          <a href="mailto:epets@animals.world.com?Subject=Hola%20Amigos de Epets!" target="_top">Contactanos</a>
+          </li>
         </a>
       </ul>
     </nav>

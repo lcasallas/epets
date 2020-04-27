@@ -12,6 +12,10 @@ li {
     text-decoration: none;
 }
 
+a {
+    color: #7045ff
+}
+
 header {
     display: flex;
     width: 100%;
@@ -48,7 +52,7 @@ header {
 }
 
 .header-icon {
-    height: 20px;
+    height: 30px;
 }
 
 .cookie-menu{
@@ -58,16 +62,20 @@ header {
 
 
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 1060px) {
     .nav-links li {
         display: none;
     }
     .header-icon {
         height: 60px;
+        justify-content: space-between;
+    }
+    .nav-links a {
+        margin-right: 30px;
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 825px) {
     .header-icon{
         display: none;
     }
