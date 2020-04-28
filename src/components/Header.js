@@ -40,12 +40,12 @@ const Header = () => (
         <img src={medic} className='header-icon'></img>
           <li>Consulta Medica</li>
         </a>
-        <a href='mail to:'>
+        
         <img src={bordContact} className='header-icon'></img>
           <li>
-          <a href="mailto:epets@animals.world.com?Subject=Hola%20Amigos de Epets!" target="_top">Contactanos</a>
+          <a href="mailto:epets@animals.world.com?Subject=Hola%20Amigos%20de%20Epets!" target="_top">Contactanos</a>
           </li>
-        </a>
+        
       </ul>
     </nav>
     <img src={cookieIcon} className='cookie-menu'></img>
