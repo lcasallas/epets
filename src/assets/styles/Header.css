@@ -12,8 +12,13 @@ li {
     text-decoration: none;
 }
 
+a {
+    color: #7045ff
+}
+
 header {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items:  center;
     padding: 5px 5%;
@@ -36,12 +41,45 @@ header {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 5px;
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
 
 .nav-links li:hover {
-    color: #423378
+    color: whitesmoke;
     
+}
+
+.header-icon {
+    height: 30px;
+}
+
+.cookie-menu{
+    height: 35px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1060px) {
+    .nav-links li {
+        display: none;
+    }
+    .header-icon {
+        height: 60px;
+        justify-content: space-between;
+    }
+    .nav-links a {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .header-icon{
+        display: none;
+    }
+    .cookie-menu{
+        display: flex;
+    }
 }
