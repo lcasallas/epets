@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/Header.css';
 import Logo from '../assets/static/epetslogo.png';
 import dogIcon from '../assets/static/dogIcon.png';
@@ -20,26 +21,26 @@ const Header = () => (
     <img className='logo' src={Logo} />
     <nav>
       <ul className='nav-links'>
-        <a href='/'>
+        <Link to='/toys'>
         <img src={petToy} className='header-icon'></img>
           <li>Juguetes</li>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='food'>
         <img src={dogFood} className='header-icon'></img>
           <li>Comida</li>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/clothes'>
         <img src={clothes} className='header-icon'></img>
           <li>Ropa</li>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/esthethic'>
         <img src={stetic} className='header-icon'></img>
           <li>Estetica</li>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/medic'>
         <img src={medic} className='header-icon'></img>
           <li>Consulta Medica</li>
-        </a>
+        </Link>
         
         <img src={bordContact} className='header-icon'></img>
           <li>
