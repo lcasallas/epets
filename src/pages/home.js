@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Ads from '../components/Ads';
 import ProductList from '../components/ProductsList';
 import Main from '../components/Main';
+import Filter from '../components/Filter';
 
 const Home = () => {
   const information = useContext(InformationContext);
@@ -14,6 +15,7 @@ const Home = () => {
     <>
       <Header />
       <Ads />
+      <Filter />
       <Main />
       <section>
         {information.sections.map((typeOfProduct) => {
