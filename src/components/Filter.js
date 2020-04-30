@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../assets/styles/components/Filter.css';
 import dogIcon from '../assets/static/dogIcon.png';
 import catIcon from '../assets/static/catIcon.png';
@@ -16,7 +16,7 @@ useEffect( () => {
     const data = await response.json()
     console.log(data)
     }
-    
+
 getData()
 }, [])
 
