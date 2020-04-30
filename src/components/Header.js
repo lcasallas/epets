@@ -10,6 +10,8 @@ import clothes from '../assets/static/tshirt.png';
 import stetic from '../assets/static/stetic.png';
 import medic from '../assets/static/consulta.png';
 import bordContact from '../assets/static/birdcontact.png';
+import registerIcon from '../assets/static/sign.png';
+import loginIcon from '../assets/static/loginIcon.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -50,14 +52,28 @@ const Header = () => {
               <span>Consulta Medica</span>
             </li>
             <li>
-              <img src={bordContact} className='header-icon'></img>
               <a
                 href='mailto:epets@animals.world.com?Subject=Hola%20Amigos%20de%20Epets!'
                 target='_blank'
               >
+              <img src={bordContact} className='header-icon'></img>
                 Contactanos
               </a>
             </li>
+
+            <li>
+              <Link to="/register">
+                <img src={registerIcon} className='header-icon'></img>
+                Register
+              </Link>
+            </li>
+            <li>
+              <Link to="/login">
+                <img src={loginIcon} className='header-icon'></img>
+                Login
+              </Link>
+            </li>
+
           </ul>
         </nav>
         <img src={cookieIcon} className='cookie-menu'></img>
