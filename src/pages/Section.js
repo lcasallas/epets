@@ -26,17 +26,17 @@ const Section = ({ match }) => {
   const getPet = (pet) => {
     switch (pet) {
       case 'birds':
-        return 'Aves';
+        return ' - Aves';
       case 'cats':
-        return 'Gatos';
+        return ' - Gatos';
       case 'mammals':
-        return 'Mamíferos';
+        return ' - Mamíferos';
       case 'dogs':
-        return 'Perros';
+        return ' - Perros';
       case 'fish':
-        return 'Peces';
+        return ' - Peces';
       case 'reptiles':
-        return 'Reptiles';
+        return ' - Reptiles';
       default:
         return '';
     }
@@ -47,7 +47,7 @@ const Section = ({ match }) => {
     const sectionPet = getPet(pet);
 
     return (
-      <h2 className='Section__title'>{`${sectionName} para ${sectionPet}`}</h2>
+      <h2 className='Section__title'>{`${sectionName}${sectionPet}`}</h2>
     );
   };
 

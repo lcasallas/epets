@@ -3,8 +3,8 @@ import '../assets/styles/components/SectionProducts.css';
 import useProducts from '../hooks/useProducts';
 import Card from './Card';
 
-const SectionProducts = ({ section, pet }) => {
-  const products = useProducts(`http://localhost:3001/api/${section}/${pet}`);
+const SectionProducts = ({ section, pet='' }) => {
+  const products = useProducts(`https://epets-pet-market.herokuapp.com/api/${section}/${pet}`);
 
   return (
     <section className='SectionProducts'>

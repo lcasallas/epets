@@ -20,6 +20,7 @@ const App = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/cart" component={Cart} />
+            <Route exact path="/section/:name" component={Section} />
             <Route exact path="/section/:name/:pet" component={Section} />
           </ColorContext.Provider>
         </Switch>

@@ -24,19 +24,19 @@ const Header = () => {
         <nav>
           <ul className='nav-links'>
             <li>
-              <Link to='/section/toys/dogs'>
+              <Link to='/section/toys'>
                 <img src={petToy} className='header-icon'></img>
                 <span>Juguetes</span>
               </Link>
             </li>
             <li>
-              <Link to='/section/food/dogs'>
+              <Link to='/section/food'>
                 <img src={dogFood} className='header-icon'></img>
                 <span>Comida</span>
               </Link>
             </li>
             <li>
-              <Link to='/section/clothes/dogs'>
+              <Link to='/section/clothes'>
                 <img src={clothes} className='header-icon'></img>
                 <span>Ropa</span>
               </Link>
