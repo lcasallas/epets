@@ -42,7 +42,7 @@ const Header = () => (
           <li>Consulta Medica</li>
         </Link>
         
-        <img src={bordContact} className='header-icon'></img>
+        <img src={bordContact} className='header-icon logeo'></img>
           <li>
           <a href="mailto:epets@animals.world.com?Subject=Hola%20Amigos%20de%20Epets!" target="_top">Contactanos</a>
           </li>
@@ -50,6 +50,11 @@ const Header = () => (
       </ul>
     </nav>
     <img src={cookieIcon} className='cookie-menu'></img>
+    <div className='sign-register'>
+      <Link to="/">Registro</Link>
+      <Link to="/">Sign In</Link>
+      
+    </div>
   </header>
 );
 

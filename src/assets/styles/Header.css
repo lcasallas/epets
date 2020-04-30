@@ -39,25 +39,42 @@ header {
 
 }
 
-.nav-links li {
+.nav-links li{
     display: inline-block;
     padding: 0px 20px 0px 5px;
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
 
-.nav-links li:hover {
+li a {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logeo{
+    text-decoration: none ;
+}
+
+
+
+.nav-links li:hover, a:hover {
     color: whitesmoke;
     
 }
 
 .header-icon {
-    height: 30px;
+    height: 20px;
 }
 
 .cookie-menu{
     height: 35px;
     display: none;
+}
+
+.sign-register a{
+    padding: 0 20px;
+    text-decoration: none;
 }
 
 
