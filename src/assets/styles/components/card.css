@@ -39,7 +39,7 @@ article {
   color: var(--color-third-change);
 }
 
-.toy {
+.toy, .toys {
   background-color: var(--color-toys-background);
 }
 
@@ -47,7 +47,7 @@ article {
   background-color: var(--color-food-background);
 }
 
-.service {
+.service, .clothes {
   background-color: var(--color-service-background);
 }
 

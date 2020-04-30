@@ -4,7 +4,7 @@ import error from '../assets/static/error.png';
 
 const Error = ({ message }) => (
   <div className='Error'>
-    <img className='Error__icon' src={error} />
+    <img className='Error__icon' src={`/${error}`} />
     <span className='Error__message'>{message}</span>
   </div>
 );

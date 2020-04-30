@@ -1,0 +1,56 @@
+@import '../global-styles.css';
+
+.Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.Section__title {
+  margin: 35px 0;
+  font-size: 35px;
+  font-family: var(--font-main);
+  color: var(--color-third-change);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.Section__filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Section__filter__description {
+  text-transform: uppercase;
+  color: var(--color-border-box);
+}
+
+.Section__filter__options {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section__filter__option {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section__filter__option__img {
+  width: 45px;
+}
+
+.Section__filter__option__pet {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--color-third);
+  font-weight: bold;
+  font-size: 12px;
+}

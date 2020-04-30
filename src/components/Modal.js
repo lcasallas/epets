@@ -11,7 +11,7 @@ const Modal = ({ isOpen, onClose, children }) => {
   return createPortal(
     <div className='Modal'>
       <figure onClick={onClose} className='Modal__close'>
-        <img className='Modal__close__icon' src={close}/>
+        <img className='Modal__close__icon' src={`/${close}`}/>
       </figure>
       <div className='Modal__container'>
         {children}
