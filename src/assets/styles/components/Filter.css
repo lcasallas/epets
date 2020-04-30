@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+.filter-list button{
+    border: none
+}
+
 .filter-item img {
     height: 60px;
     width: 60px;
@@ -25,15 +29,14 @@
 
 .filter-item {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     margin: 0 20px;
     justify-content: center;
     align-items: center;
 }
 
-.filter-item a {
+.filter-item p {
     font-size: 15px;
-
 }
 
 .filter-legend {

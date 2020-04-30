@@ -4,13 +4,13 @@ import Filter from '../components/Filter';
 
 class Toys extends React.Component {
     render() {
-        return(
+        return (
             <>
-            <Header />
-            <div className={`cards__title`}>
-            <h2>Hello Toys</h2>
-            <Filter />
-            </div>
+                <Header />
+                <div className={`cards__title`}>
+                <h2>Hello Toys</h2>
+                <Filter />
+                </div>
             </>
         )
     }

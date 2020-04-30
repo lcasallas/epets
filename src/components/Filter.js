@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../assets/styles/components/Filter.css';
 import dogIcon from '../assets/static/dogIcon.png';
 import catIcon from '../assets/static/catIcon.png';
@@ -8,51 +8,60 @@ import reptileIcon from '../assets/static/reptileIcon.png';
 import mamalIcon from '../assets/static/mamalIcon.png';
 import eraseIcon from '../assets/static/eraseIcon.png';
 
-const Filter = () => (
-    <div>
-        <p className="filter-legend">FILTRA POR TIPO DE MASCOTA</p>
+export default function Filter() {
 
-        <nav className="filter">
-            <ul className="filter-list">
-                <div className="filter-item">
-                    <img src={birdIcon}></img>
-                    <a>Aves</a>
-                </div>
+useEffect( () => {
+    async function getData() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const data = await response.json()
+    console.log(data)
+    }
+    
+getData()
+}, [])
 
-                <div className="filter-item">
-                    <img src={catIcon}></img>
-                    <a>Gatos</a>
-                </div>
+    return (
+        <div>
+            <p className='filter-legend'>FILTRA POR TIPO DE MASCOTA</p>
 
-                <div className="filter-item">
-                    <img src={mamalIcon}></img>
-                    <a>Mamíferos</a>
-                </div>
+            <nav className='filter'>
+            <ul className='filter-list'>
+                <button className='filter-item'>
+                <img src={birdIcon}></img>
+                <p>Aves</p>
+                </button>
 
+                <button className='filter-item'>
+                <img src={catIcon}></img>
+                <p>Gatos</p>
+                </button>
 
-                <div className="filter-item">
-                    <img src={dogIcon}></img>
-                    <a>Perros</a>
-                </div>
+                <button className='filter-item'>
+                <img src={mamalIcon}></img>
+                <p>Mamíferos</p>
+                </button>
 
-                <div className="filter-item">
-                    <img src={fishIcon}></img>
-                    <a>Peces</a>
-                </div>
+                <button className='filter-item'>
+                <img src={dogIcon}></img>
+                <p>Perros</p>
+                </button>
 
-                <div className="filter-item">
-                    <img src={reptileIcon}></img>
-                    <a>Reptiles</a>
-                </div>
+                <button className='filter-item'>
+                <img src={fishIcon}></img>
+                <p>Peces</p>
+                </button>
 
-                <div className="filter-item">
-                    <img src={eraseIcon}></img>
-                    <a>Borrar Filtro</a>
-                </div>
+                <button className='filter-item'>
+                <img src={reptileIcon}></img>
+                <p>Reptiles</p>
+                </button>
+
+                <button className='filter-item'>
+                <img src={eraseIcon}></img>
+                <p>Borrar Filtro</p>
+                </button>
             </ul>
-        </nav>
-    </div>
-)
-
-
-export default Filter;
+            </nav>
+        </div>
+    )
+}
