@@ -2,11 +2,21 @@ import React from 'react';
 import '../assets/styles/components/SectionProducts.css';
 import useProducts from '../hooks/useProducts';
 import Card from './Card';
+import Loader from './Loader';
+import Error from './Error';
 
 const SectionProducts = ({ section, pet = '' }) => {
-  const products = useProducts(
+  const { products, loading, error } = useProducts(
     `https://epets-pet-market.herokuapp.com/api/${section}/${pet}`
   );
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <Error message='No se pudieron obtener los productos.'/>;
+  }
 
   if (!pet && Object.values(products).length) {
     const productsArray = [];
