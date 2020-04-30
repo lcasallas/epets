@@ -2,12 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .filter {
     display: grid;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -16,10 +18,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .filter-list button{
-    border: none
+    border: none;
+    outline: none;
+    background-color: #e8e8e8
+    
 }
 
 .filter-item img {
@@ -45,5 +51,14 @@
     font-weight: 600px;
     margin: 20px;
 }
+
+
+@media screen and (max-width: 768px){
+    .filter-list{
+        flex-wrap: wrap;
+    }
+}
+
+
 
 

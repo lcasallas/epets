@@ -18,7 +18,10 @@ import bordContact from '../assets/static/birdcontact.png';
 
 const Header = () => (
   <header className="Header">
+    <Link to="/">
+
     <img className='logo' src={Logo} />
+    </Link>
     <nav>
       <ul className='nav-links'>
         <Link to='/toys'>
