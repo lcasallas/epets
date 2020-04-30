@@ -1,0 +1,33 @@
+const menuCards = 
+[
+	{
+		nombre: 'aves',
+		imagen: '../assets/static/birdIcon.png',
+		equivalente: 'birds'
+	},
+	{
+		nombre: 'perros',
+		imagen: '../assets/static/dogIcon.png',
+		equivalente: 'dogs'
+    },
+    {
+        nombre: 'gatos',
+        imagen: ../assets/static/catIcon.png',
+        equivalente: 'cats'
+    },
+    {
+        nombre: 'peces',
+        imagen: '../assets/static/fishIcon.png',
+        equivalente: 'fish'
+    },
+    {
+        nombre: 'reptiles',
+        imagen: '../assets/static/reptileIcon.png',
+        equivalente: 'reptile'
+    },
+    {
+        nombre: 'mamiferos',
+        imagen: '../assets/static/mamalIcon.png',
+        equivalente: 'mamal'
+    }
+]
