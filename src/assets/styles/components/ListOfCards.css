@@ -1,47 +1,54 @@
-.cards__title{
+.cards__title {
   text-align: center;
   font-family: var(--font-main);
   font-size: 1.8em;
   font-weight: bolder;
   text-transform: uppercase;
-  margin: 1.5em 0px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
-.toys{
+.toys {
+  color: var(--color-third-change);
+}
+
+.foods {
   background-color: white;
-  color:var(--color-third-change);
+  color: var(--color-secondary);
 }
 
-.foods{
+.services {
   background-color: white;
-  color:var(--color-secondary);
+  color: var(--color-main-title);
 }
 
-.services{
-  background-color: white;
-  color:var(--color-main-title);
-}
-
-.cards__container{
+.cards__container {
   display: flex;
   justify-content: center;
+  margin: 0 35px 0 5px;
 }
 
-.cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-columns: auto;
+.cards {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 20px;
   background-color: white;
-  margin: 0 100px;
+  margin: 0 100px 0 100px;
 }
 
-.card{
-  height: 460px;
+.cards::-webkit-scrollbar {
+  background-color: var(--color-shadows);
+  border-radius: 20px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width:400px) {
-  .cards{
-    margin:0;
-    grid-gap: 30px;
+.cards::-webkit-scrollbar-thumb {
+  background-color: darkslateblue;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .cards {
+    margin: 0;
   }
 }

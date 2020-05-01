@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import Layout from './components/Layout';
 import Home from './pages/home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
-// import { UserContext } from "./providers/UserProvider";
-// import UserProvider from "./Context/UserProvider";
-// import ColorContext, { Information } from './Context/Information';
 
 const App = () => {
   return (
@@ -24,8 +22,6 @@ const App = () => {
         </Switch>
       </BrowserRouter>
     </UserProvider >
-
-
   );
 };
 

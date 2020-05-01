@@ -27,7 +27,7 @@ The tools used
 
   * Frontend: React
 
-### Authors ✒️
+### ✒️ Authors
 
 * **César Galindo** - [chestergalindo](https://github.com/chestergalindo)
 * **Francisco López** - [pacool84](https://github.com/pacool84)
@@ -35,10 +35,11 @@ The tools used
 * **Leonardo Casallas** - [lcasallas](https://github.com/lcasallas)
 * **Luis Flores Álvarez** - [luisflorescode](https://github.com/luisflorescode)
 * **William Velazquez** - [WilliamVelazquez](https://github.com/WilliamVelazquez)
+* **Alberto Camarena** - [alberthor47](https://github.com/Alberthor47)
 
 If you prefer knows the [contributors](https://github.com/lcasallas/epets/pulse/monthly) check this link.
 
-### Expressions of Gratitude 🎁
+### 🎁 Expressions of Gratitude
 
 * Comments a other people about this project. 📢
 * Invite a beer 🍺 someone of team.
