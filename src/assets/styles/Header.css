@@ -1,85 +1,81 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    font-family: 'Muli', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #7045ff;
-    text-decoration: none;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7045ff;
+  text-decoration: none;
 }
 
 a {
-    color: #7045ff
+  color: #7045ff;
 }
 
 header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items:  center;
-    padding: 5px 5%;
-    background-color: #30e3cb;
-    box-shadow: 10px 10px 5px 0px var(--color-shadows);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #30e3cb;
+  box-shadow: 10px 10px 5px 0px var(--color-shadows);
 }
 
 .logo {
-    cursor: pointer;
-    width: 200px;
-    height: 40%;
-    padding-bottom: 0px;
+  cursor: pointer;
+  width: 200px;
+  height: 40%;
+  padding-bottom: 0px;
 }
 
-
 .nav-links {
-    list-style: none;
-
+  list-style: none;
+  border: 1px solid red;
 }
 
 .nav-links li {
-    display: inline-block;
-    padding: 0px 20px 0px 5px;
-    transition: all 0.5s ease 0s;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0px 20px 0px 5px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
 }
 
 .nav-links li:hover {
-    color: whitesmoke;
-    
+  color: whitesmoke;
 }
 
 .header-icon {
-    height: 30px;
+  height: 30px;
 }
 
-.cookie-menu{
-    height: 35px;
-    display: none;
+.cookie-menu {
+  height: 35px;
+  display: none;
 }
-
-
 
 @media screen and (max-width: 1060px) {
-    .nav-links li {
-        display: none;
-    }
-    .header-icon {
-        height: 60px;
-        justify-content: space-between;
-    }
-    .nav-links a {
-        margin-right: 30px;
-    }
+  .nav-links li {
+    display: none;
+  }
+  .header-icon {
+    height: 60px;
+    justify-content: space-between;
+  }
+  .nav-links a {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 825px) {
-    .header-icon{
-        display: none;
-    }
-    .cookie-menu{
-        display: flex;
-    }
+  .header-icon {
+    display: none;
+  }
+  .cookie-menu {
+    display: flex;
+  }
 }
