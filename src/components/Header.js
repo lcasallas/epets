@@ -28,20 +28,26 @@ const Header = () => {
           <ul className="nav-links">
             <li>
               <Link to="/section/toys">
-                <img src={petToy} className="header-icon"></img>
-                <span>Juguetes</span>
+                <div className="container-icons">
+                  <img src={petToy} className="header-icon"></img>
+                  <span>Juguetes</span>
+                </div>
               </Link>
             </li>
             <li>
               <Link to="/section/food">
-                <img src={dogFood} className="header-icon"></img>
-                <span>Comida</span>
+                <div className="container-icons">
+                  <img src={dogFood} className="header-icon"></img>
+                  <span>Comida</span>
+                </div>
               </Link>
             </li>
             <li>
               <Link to="/section/clothes">
-                <img src={clothes} className="header-icon"></img>
-                <span>Ropa</span>
+                <div className="container-icons">
+                  <img src={clothes} className="header-icon"></img>
+                  <span>Ropa</span>
+                </div>
               </Link>
             </li>
             <li
@@ -49,31 +55,39 @@ const Header = () => {
                 setModal({ open: true, calendlyType: "estetica" });
               }}
             >
-              <img src={stetic} className="header-icon"></img>
-              <span>Estética</span>
+              <div className="container-icons">
+                <img src={stetic} className="header-icon"></img>
+                <span>Estética</span>
+              </div>
             </li>
             <li
               onClick={() => {
                 setModal({ open: true, calendlyType: "consulta" });
               }}
             >
-              <img src={medic} className="header-icon"></img>
-              <span>Consulta Medica</span>
+              <div className="container-icons">
+                <img src={medic} className="header-icon"></img>
+                <span>Consulta</span>
+              </div>
             </li>
             <li>
               <a
                 href="mailto:epets@animals.world.com?Subject=Hola%20Amigos%20de%20Epets!"
                 target="_blank"
               >
-                <img src={bordContact} className="header-icon"></img>
-                Contactanos
+                <div className="container-icons">
+                  <img src={bordContact} className="header-icon"></img>
+                  <span>Contactanos</span>
+                </div>
               </a>
             </li>
 
             <li>
               <Link to="/">
-                <img src={houseIcon} className="header-icon"></img>
-                Inicio
+                <div className="container-icons">
+                  <img src={houseIcon} className="header-icon"></img>
+                  <span>Inicio</span>
+                </div>
               </Link>
             </li>
           </ul>

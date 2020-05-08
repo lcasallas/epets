@@ -7,7 +7,7 @@ import fishIcon from "../assets/static/fishIcon.png";
 import birdIcon from "../assets/static/birdIcon.png";
 import reptileIcon from "../assets/static/reptileIcon.png";
 import mammalIcon from "../assets/static/mamalIcon.png";
-import seeAll from "../assets/static/seeAll.png";
+import seeAllIcon from "../assets/static/seeAll.png";
 import SectionProducts from "../components/SectionProducts";
 
 const Section = ({ match }) => {
@@ -113,7 +113,10 @@ const Section = ({ match }) => {
             <span className="Section__filter__option__pet">Reptiles</span>
           </Link>
           <Link className="Section__filter__option">
-            <img className="Section__filter__option__img" src={`/${seeAll}`} />
+            <img
+              className="Section__filter__option__img"
+              src={`/${seeAllIcon}`}
+            />
             <span className="Section__filter__option__pet">Todos</span>
           </Link>
         </div>
