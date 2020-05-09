@@ -10,8 +10,6 @@ import clothes from "../assets/static/tshirt.png";
 import stetic from "../assets/static/stetic.png";
 import medic from "../assets/static/consulta.png";
 import bordContact from "../assets/static/birdcontact.png";
-import registerIcon from "../assets/static/sign.png";
-import loginIcon from "../assets/static/loginIcon.png";
 import houseIcon from "../assets/static/houseIcon.png";
 import { Link } from "react-router-dom";
 

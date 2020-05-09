@@ -70,25 +70,24 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1095px) {
+@media screen and (max-width: 850px) {
   .nav-links span {
-    display: none;
+    font-size: 13px;
   }
-  .header-icon {
+
+  .container-icons img {
+    height: 50px;
+    width: 52px;
+  }
+  /* .header-icon {
     height: 60px;
     justify-content: space-between;
-  }
+  } */
   /* .nav-links a {
     margin-right: 30px;
   } */
 }
 
-@media screen and (max-width: 825px) {
-  .header-icon {
-    height: 30px;
-    /* display: none; */
-  }
-  /*   .cookie-menu {
+/*   .cookie-menu {
     display: flex;
   } */
-}
