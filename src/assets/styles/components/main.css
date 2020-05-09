@@ -1,4 +1,4 @@
-.main__title{
+.main__title {
   color: var(--color-main);
   text-align: center;
   font-family: var(--font-main);
@@ -8,7 +8,7 @@
   margin: 1.5em 0px;
 }
 
-.main_text{
+.main_text {
   color: var(--color-third-change);
   padding: 0 110px;
   text-align: center;
