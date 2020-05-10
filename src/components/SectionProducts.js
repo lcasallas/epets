@@ -7,7 +7,7 @@ import Error from './Error';
 
 const SectionProducts = ({ section, pet = '' }) => {
   const { products, loading, error } = useProducts(
-    `https://epets-pet-market.herokuapp.com/api/${section}/${pet}`
+    `https://epets-pet-market.herokuapp.com/api/products/${section}/${pet}`
   );
 
   if (loading) {
