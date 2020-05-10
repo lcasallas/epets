@@ -51,9 +51,17 @@ article {
   background-color: var(--color-service-background);
 }
 
+.card__link__button{
+  padding: 5px 15px;
+  border-radius: 22px;
+  box-shadow: 3px 3px 2px 0px var(--color-shadows);
+  background-color: var(--color-third-change);
+}
+
 a {
   text-decoration: none;
   font-family: var(--font-main);
+  color: var(--color-toys-background)
 }
 
 a:hover {
@@ -62,4 +70,6 @@ a:hover {
 
 .card__link {
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }

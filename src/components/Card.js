@@ -13,7 +13,9 @@ return (
         <p> {data.body}</p>
       </div>
       <div className='card__link'>
-        <a href={data.link} target="_blank" > {data.linkShow}</a>
+        <button className='card__link__button'>
+          <a href={data.link} target="_blank" > {data.linkShow}</a>
+        </button>
       </div>
     </article>
   )
