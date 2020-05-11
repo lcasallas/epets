@@ -112,7 +112,9 @@ const Section = ({ match }) => {
             />
             <span className="Section__filter__option__pet">Reptiles</span>
           </Link>
-          <Link className="Section__filter__option">
+          <Link
+            to={`/section/${match.params.name}`}
+            className="Section__filter__option">
             <img
               className="Section__filter__option__img"
               src={`/${seeAllIcon}`}
