@@ -6,3 +6,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
+
+.SectionProductsHome {
+  display: flex;
+  margin: 0;
+}
