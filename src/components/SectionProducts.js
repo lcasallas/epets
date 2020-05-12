@@ -5,7 +5,7 @@ import Card from './Card';
 import Loader from './Loader';
 import Error from './Error';
 
-const SectionProducts = ({ section, pet = '' }) => {
+const SectionProducts = ({ section, pet = '', page = '' }) => {
   const { products, loading, error } = useProducts(
     `https://epets-pet-market.herokuapp.com/api/${
       section === 'medic' ? 'services' : 'products'
@@ -27,12 +27,10 @@ const SectionProducts = ({ section, pet = '' }) => {
       Object.values(section).forEach((product) => {
         productsArray.push(product);
       });
-
-      console.log(productsArray);
     });
 
     return (
-      <section className="SectionProducts">
+      <section className={`SectionProducts${page}`}>
         {productsArray.map((product, index) => {
           const data = {
             photo: product.image,
@@ -49,7 +47,7 @@ const SectionProducts = ({ section, pet = '' }) => {
   }
 
   return (
-    <section className="SectionProducts">
+    <section className={`SectionProducts${page}`}>
       {products.map((product, index) => {
         let data;
         if (section === 'medic') {

@@ -6,25 +6,25 @@ import ProductList from '../components/ProductsList';
 import Main from '../components/Main';
 
 const Home = () => {
-  const information = useContext(InformationContext);
-
   return (
     <>
       <Ads />
       <Main />
-      <section>
-        {information.sections.map((typeOfProduct) => {
-          return (
-            <ListOfCards
-              key={typeOfProduct.color}
-              color={typeOfProduct.color}
-              title={typeOfProduct.title}
-              id={typeOfProduct.id}
-              subtitle={[typeOfProduct.subTitle]}
-            />
-          );
-        })}
-      </section>
+      <ListOfCards
+        key='toys'
+        title='Juguetes Destacados'
+        id='toys'
+      />
+      <ListOfCards
+        key='food'
+        title='Comida'
+        id='food'
+      />
+      <ListOfCards
+        key='medic'
+        title='Servicios Médicos'
+        id='medic'
+      />
       <ProductList />
     </>
   );
