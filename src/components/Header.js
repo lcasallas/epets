@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import Modal from "./Modal";
-import Calendly from "./Calendly";
-import "../assets/styles/Header.css";
-import Logo from "../assets/static/epetslogo.png";
-import cookieIcon from "../assets/static/cookieIcon.png";
-import petToy from "../assets/static/pettoy.png";
-import dogFood from "../assets/static/dogfood.png";
-import clothes from "../assets/static/tshirt.png";
-import stetic from "../assets/static/stetic.png";
-import medic from "../assets/static/consulta.png";
-import bordContact from "../assets/static/birdcontact.png";
-import houseIcon from "../assets/static/houseIcon.png";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import Modal from './Modal';
+import Calendly from './Calendly';
+import '../assets/styles/Header.css';
+import Logo from '../assets/static/epetslogo.png';
+import cookieIcon from '../assets/static/cookieIcon.png';
+import petToy from '../assets/static/pettoy.png';
+import dogFood from '../assets/static/dogfood.png';
+import clothes from '../assets/static/tshirt.png';
+import stetic from '../assets/static/stetic.png';
+import medic from '../assets/static/consulta.png';
+import bordContact from '../assets/static/birdcontact.png';
+import houseIcon from '../assets/static/houseIcon.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [modal, setModal] = useState({ open: false, calendlyType: "" });
+  const [modal, setModal] = useState({ open: false, calendlyType: '' });
 
   return (
     <>
@@ -50,7 +50,7 @@ const Header = () => {
             </li>
             <li
               onClick={() => {
-                setModal({ open: true, calendlyType: "estetica" });
+                setModal({ open: true, calendlyType: 'estetica' });
               }}
             >
               <div className="container-icons">
@@ -58,15 +58,13 @@ const Header = () => {
                 <span>Estética</span>
               </div>
             </li>
-            <li
-              onClick={() => {
-                setModal({ open: true, calendlyType: "consulta" });
-              }}
-            >
-              <div className="container-icons">
-                <img src={medic} className="header-icon"></img>
-                <span>Consulta</span>
-              </div>
+            <li>
+              <Link to="/section/medic">
+                <div className="container-icons">
+                  <img src={medic} className="header-icon"></img>
+                  <span>Consulta</span>
+                </div>
+              </Link>
             </li>
             <li>
               <a

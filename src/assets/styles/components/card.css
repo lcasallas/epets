@@ -5,6 +5,7 @@ article {
   width: 300px;
   padding: 0.5em 1.5em;
   box-shadow: 8px 8px 2px 0px var(--color-shadows);
+  margin-right: 25px;
 }
 
 .card__img {

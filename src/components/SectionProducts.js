@@ -5,9 +5,11 @@ import Card from './Card';
 import Loader from './Loader';
 import Error from './Error';
 
-const SectionProducts = ({ section, pet = '' }) => {
+const SectionProducts = ({ section, pet = '', page = '' }) => {
   const { products, loading, error } = useProducts(
-    `https://epets-pet-market.herokuapp.com/api/products/${section}/${pet}`
+    `https://epets-pet-market.herokuapp.com/api/${
+      section === 'medic' ? 'services' : 'products'
+    }/${section}/${pet}`
   );
 
   if (loading) {
@@ -15,10 +17,10 @@ const SectionProducts = ({ section, pet = '' }) => {
   }
 
   if (error) {
-    return <Error message='No se pudieron obtener los productos.'/>;
+    return <Error message="No se pudieron obtener los productos." />;
   }
 
-  if (!pet && Object.values(products).length) {
+  if (!pet && section !== 'medic' && Object.values(products).length) {
     const productsArray = [];
 
     products.forEach((section) => {
@@ -28,7 +30,7 @@ const SectionProducts = ({ section, pet = '' }) => {
     });
 
     return (
-      <section className="SectionProducts">
+      <section className={`SectionProducts${page}`}>
         {productsArray.map((product, index) => {
           const data = {
             photo: product.image,
@@ -45,15 +47,26 @@ const SectionProducts = ({ section, pet = '' }) => {
   }
 
   return (
-    <section className="SectionProducts">
+    <section className={`SectionProducts${page}`}>
       {products.map((product, index) => {
-        const data = {
-          photo: product.image,
-          name: product.name,
-          body: product.description,
-          link: product.url,
-          linkShow: 'Comprar producto',
-        };
+        let data;
+        if (section === 'medic') {
+          data = {
+            photo: product.image,
+            name: product.title,
+            body: product.description,
+            link: product.url,
+            linkShow: 'Más información',
+          };
+        } else {
+          data = {
+            photo: product.image,
+            name: product.name,
+            body: product.description,
+            link: product.url,
+            linkShow: 'Comprar producto',
+          };
+        }
 
         return <Card key={index} data={data} color={section} />;
       })}
