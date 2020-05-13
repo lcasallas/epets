@@ -6,6 +6,13 @@ article {
   padding: 0.5em 1.5em;
   box-shadow: 8px 8px 2px 0px var(--color-shadows);
   margin-right: 25px;
+  display: grid;
+  grid-template-rows: 38% 62%;
+}
+
+.card__container_item{
+  display: grid;
+  grid-template-rows: 16% 70% 14%;
 }
 
 .card__img {
@@ -14,19 +21,20 @@ article {
 }
 
 .card__img img {
-  height: 240px;
-  width: 240px;
+  height: 160px;
+  width: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+  object-fit: contain;
 }
 
 .card__title {
   color: var(--color-third-change);
   font-family: var(--font-main);
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 15px;
   padding: 20px 0px;
 }
 
@@ -42,6 +50,10 @@ article {
 
 .toy, .toys {
   background-color: var(--color-toys-background);
+}
+
+.size_card{
+  height: 480px;
 }
 
 .food {

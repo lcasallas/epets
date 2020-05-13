@@ -30,7 +30,7 @@
 
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: auto;
   padding-bottom: 20px;
   background-color: white;
