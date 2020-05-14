@@ -5,7 +5,7 @@
 }
 
 li {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #7045ff;
@@ -45,6 +45,16 @@ header {
   cursor: pointer;
 }
 
+.nav-links li:hover a,
+.nav-links li:hover .container-icons {
+  color: whitesmoke !important;
+  text-decoration: none !important;
+}
+
+.nav-links li a {
+  color: #7045ff !important;
+}
+
 .container-icons {
   display: flex;
   flex-direction: column;
@@ -56,9 +66,6 @@ header {
 .container-icons img {
   height: 30px;
   width: 32px;
-}
-.nav-links li:hover {
-  color: whitesmoke;
 }
 
 .header-icon {
